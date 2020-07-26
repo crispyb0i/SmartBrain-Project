@@ -1,4 +1,7 @@
 import React, { Component } from "react"
+import Particles from 'react-particles-js'
+import Clarifai from 'clarifai'
+import "./App.css"
 import Navigation from './components/Navigation/Navigation'
 import Logo from './components/Logo/Logo'
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm'
@@ -6,9 +9,6 @@ import FaceRecognition from './components/FaceRecognition/FaceRecognition'
 import Rank from './components/Rank/Rank'
 import Signin from './components/Signin/Signin'
 import Register from './components/Register/Register'
-import Particles from 'react-particles-js'
-import Clarifai from 'clarifai'
-import "./App.css"
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
