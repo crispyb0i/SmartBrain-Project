@@ -18,6 +18,9 @@ class Signin extends Component {
   }
 
   onSubmitSignIn = () => {
+    if(this.state.signInEmail==='' || this.state.signInPassword===''){
+      return
+    }
     fetch('http://localhost:3000/signin', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
@@ -46,6 +49,7 @@ class Signin extends Component {
               <div className="mt3">
                 <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
                 <input
+                  required
                   onChange={this.onEmailChange}
                   className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="email"
                   name="email-address"
@@ -55,6 +59,7 @@ class Signin extends Component {
               <div className="mv3">
                 <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
                 <input
+                  required
                   onChange={this.onPasswordChange}
                   className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password"
                   name="password"
