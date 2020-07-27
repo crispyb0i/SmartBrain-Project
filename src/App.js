@@ -10,7 +10,7 @@ import Rank from './components/Rank/Rank'
 import Signin from './components/Signin/Signin'
 import Register from './components/Register/Register'
 
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = 'af6225e9942849cd84c0fe1c8e88cefa';
 
 const particlesOptions = {
     particles: {
