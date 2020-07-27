@@ -31,7 +31,7 @@ const initialState = {
   input: '',
   imageURL: '',
   boxes: [],
-  route: 'signin',
+  route: 'home',
   isSignedIn: false,
   user: {
     id:'',
@@ -140,7 +140,6 @@ class App extends Component {
 
 
         }
-
       </div>
     )
   }

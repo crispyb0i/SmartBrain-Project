@@ -6,3 +6,7 @@
   justify-content: center;
   cursor: pointer;
 }
+
+.pad {
+  margin-bottom: 500px;
+}

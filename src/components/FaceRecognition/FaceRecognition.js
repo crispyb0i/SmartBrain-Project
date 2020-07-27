@@ -11,6 +11,8 @@ const FaceRecognition = ({ imageURL, boxes }) => {
         })     
         }
       </div>
+      <div className="pad">
+      </div>
     </div>
   )
 }
